@@ -7,6 +7,15 @@ def is_valid(n):
             return True
         else:
             return False
+            
+a = input("Введите число от 1 до 100")
+
+while True:
+    if is_valid(a) == False:
+        print("А может быть все-таки введем целое число от 1 до 100?")
+        continue
+    else:
+        break
 
 n = input()
 print(is_valid(n))
